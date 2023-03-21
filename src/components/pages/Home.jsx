@@ -58,7 +58,7 @@ function Home({ todoItems, setTodoItems }) {
   return (
     <div className="relative pb-[200px] min-h-screen">
       <Input onAddItem={onAddItem} />
-      {todoItems.length && (
+      {todoItems?.length && (
         <TodoList
           todoItems={todoItems}
           onRemoveItem={onRemoveItem}

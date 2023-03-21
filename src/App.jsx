@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     localStorage.setItem("todoItem", JSON.stringify(todoItems));
   }, [todoItems]);
-  console.log(todoItems);
+
   return (
     <div className="relative">
       <Router>
