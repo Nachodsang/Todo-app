@@ -10,7 +10,7 @@ const App = () => {
   // use Prev State funciton
   const pullPrevList = () => {
     const prevItemList = JSON.parse(localStorage.getItem("todoItem"));
-    return prevItemList;
+    return prevItemList ? prevItemList : [];
   };
 
   // state

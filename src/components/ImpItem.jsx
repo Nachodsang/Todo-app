@@ -13,6 +13,7 @@ const ImpItem = ({ todoItems }) => {
           {importantList.map((item) => {
             return (
               <Link
+                key={item.id}
                 to={`/item/${item.id}`}
                 className="border border-blue-300 bg-white px-4 py-2 rounded-full text-gray-800 font-semibold"
               >
